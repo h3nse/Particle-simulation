@@ -1,10 +1,10 @@
 extends Node2D
 
-var mass = 0.1
+var mass = 1
 var velocity = Vector2.ZERO
 var acceleration = Vector2.ZERO
 
-func applyForce(Force):
+func apply_force(Force):
 	acceleration += Force / mass
 
 func _process(delta):
