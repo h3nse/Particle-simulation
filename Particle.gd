@@ -9,5 +9,5 @@ func apply_force(Force):
 
 func _process(delta):
 	velocity += acceleration * delta
-	position += velocity * delta
+	position += velocity * delta * 100
 	acceleration = Vector2.ZERO
